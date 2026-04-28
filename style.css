@@ -5,3 +5,8 @@ body{
 .titles{
     text-align: center;
 }
+
+text{
+    text-align:center;
+    color:blue;
+}
