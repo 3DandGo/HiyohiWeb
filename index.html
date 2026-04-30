@@ -12,12 +12,17 @@
     <br>
 
     Income Amount<br>
-    <input id = "incomeInput">
+    <input id = "incomeInput" type = "text" placeholder = "Enter Income Amount">
     <br>
+    <br>
+    Expense Amount<br>
+    <input id = "expenseInput" type = "text" placeholder = "Enter Expense Amount">
+    <br>
+    <br>
+    <button onClick = "calculateIncome()" id = "calculateBtn">Calculate</button>
+    <button onClick = "resetCalculator()" id = "resetBtn">Reset</button>
 
-    <button id = "calculateButton">Calculate</button>
-
-    <h3>Remaining Amount Is:</h3>
+    <h3>Remaining Income:</h3>
     <h3 id = "remainingAmount"></h3>
     
     <script src = "index.js"></script>
