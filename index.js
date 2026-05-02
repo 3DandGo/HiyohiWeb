@@ -24,3 +24,24 @@ function resetCalculator(){
     expenseName.value = "";
     expenseAmount.value = "";
 }
+
+function addIncome(){
+    let name = document.getElementById("incomeInputName").value;
+    let amount = document.getElementById("incomeInputAmount").value;
+
+    let income = {name, amount};
+    incomes.push(income);
+
+    renderIncomes();
+}
+
+function renderIncomes(){
+    let list = document.getElementById("incomeList");
+    list.innerHTML = "";
+
+    incomes.forEach(exp => {
+        let li = document.createElement("li");
+        li.textContent = `${exp.name}: $${exp.amount}`;
+        list.appendChild(li);
+    });
+}
