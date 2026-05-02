@@ -9,16 +9,26 @@
 <body>
 
     <h1 class = "titles">Hiyohi-Kun</h1>
+    Income Name<br>
+    <input id = "incomeInputName" type = "text" placeholder = "Enter Income Name">
+    <br>
+    Income Amount<br>
+    <input id = "incomeInputAmount" type = "text" placeholder = "Enter Income Amount">
+    <br>
+    <button onClick = "addIncome()" id = "addIncomeBtn">Add Income</button>
+    <br>
     <br>
 
-    Income Amount<br>
-    <input id = "incomeInput" type = "text" placeholder = "Enter Income Amount">
-    <br>
+    Expense Name<br>
+    <input id = "expenseInputName" type = "text" placeholder = "Enter Expense Name">
     <br>
     Expense Amount<br>
-    <input id = "expenseInput" type = "text" placeholder = "Enter Expense Amount">
+    <input id = "expenseInputAmount" type = "text" placeholder = "Enter Expense Amount">
+    <br>
+    <button onClick = "addExpense()" id = "addExpenseBtn">Add Expense</button>
     <br>
     <br>
+
     <button onClick = "calculateIncome()" id = "calculateBtn">Calculate</button>
     <button onClick = "resetCalculator()" id = "resetBtn">Reset</button>
 
