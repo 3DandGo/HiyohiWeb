@@ -41,7 +41,27 @@ function renderIncomes(){
 
     incomes.forEach(exp => {
         let li = document.createElement("li");
-        li.textContent = `${exp.name}: $${exp.amount}`;
+        li.textContent = `${exp.name}: ${exp.amount}円`;
+        list.appendChild(li);
+    });
+}
+
+function addExpense(){
+    let name = document.getElementById("expenseInputName").value;
+    let amount = document.getElementById("expenseInputAmount").value;
+
+    let expense = {name, amount};
+    expenses.push(expense);
+    renderExpenses();
+}
+
+function renderExpenses(){
+    let list = document.getElementById("expenseList");
+    list.innerHTML = "";
+
+    expenses.forEach(exp => {
+        let li = document.createElement("li");
+        li.textContent = `${exp.name}: ${exp.amount}円`;
         list.appendChild(li);
     });
 }
