@@ -1,3 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
 body{
-    background-color:rgb(99, 233, 218);
+    background-color:#22332E;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.container {
+    width: 360px;
+    background: white;
+    border-radius: 24px;
+    overflow:hidden;
+}
+
+.app-header {
+    background: #9FE1CB;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.app-header h1 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #085041;
+}
+
+.app-header p {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #0F6E56;
+}
+
+.content {
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.income-section {
+    background: #E1F5EE;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.income-section .section-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #0F6E56;
+    margin-bottom: 8px;
+}
+
+.income-section input {
+    width: 100%;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    border: 0.5px solid #9FE1CB;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+.income-section button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background: #1D9E75;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.expense-section {
+    background: #FAECE7;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.expense-section .section-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #993C1D;
+    margin-bottom: 8px;
+}
+
+.expense-section input {
+    width: 100%;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    border: 0.5px solid #F5C4B3;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+.expense-section button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background: #D85A30;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+ul li {
+    font-size: 13px;
+    padding: 4px 8px;
+    background: white;
+    border-radius: 8px;
+}
+
+.button-row {
+    display: flex;
+    gap: 8px;
+}
+
+#calculateBtn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #085041;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#resetBtn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #ccc;
+    background: #f5f5f5;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.result-section {
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.result-section p {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+#remainingAmount {
+    font-size: 24px;
+    font-weight: 500;
+    color: #085041;
 }

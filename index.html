@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +7,39 @@
     <link rel = "stylesheet" href = "style.css"> 
 </head>
 <body>
+<div class = "container">
+    <div class = "app-header">
+        <h1>Hiyohi-Kun</h1>
+        <p>収入◦支出管理アプリ</p>
+    </div>
+<div class = "content">
+    <div class = "income-section">
+        <p class = "section-title">収入</p>
+        <input id = "incomeInputName" type = "text" placeholder = "収入の名前">
+        <input id = "incomeInputAmount" type = "text" placeholder = "収入の金額">
+        <button onClick = "addIncome()"> + 収入を追加</button>
+        <ul id = "incomeList"></ul>
+    </div> 
 
-    <h1 class = "titles">Hiyohi-Kun</h1>
-    Income Name<br>
-    <input id = "incomeInputName" type = "text" placeholder = "Enter Income Name">
-    <br>
-    Income Amount<br>
-    <input id = "incomeInputAmount" type = "text" placeholder = "Enter Income Amount">
-    <br>
-    <button onClick = "addIncome()" id = "addIncomeBtn">Add Income</button>
-    <br>
-    <ul id = "incomeList"></ul>
-    <br>
+    <div class = "expense-section">
+        <p class = "section-title">支出</p>
+        <input id = "expenseInputName" type = "text" placeholder = "支出の名前">
+        <input id = "expenseInputAmount" type = "text" placeholder = "支出の金額">
+        <button onClick = "addExpense()"> + 支出を追加</button>
+        <ul id = "expenseList"></ul>
+    </div>
 
-    Expense Name<br>
-    <input id = "expenseInputName" type = "text" placeholder = "Enter Expense Name">
-    <br>
-    Expense Amount<br>
-    <input id = "expenseInputAmount" type = "text" placeholder = "Enter Expense Amount">
-    <br>
-    <button onClick = "addExpense()" id = "addExpenseBtn">Add Expense</button>
-    <br>
-    <ul id = "expenseList"></ul>
-    <br>
+    <div class = "button-row">
+        <button onClick = "calculateIncome()" id = "calculateBtn">計算する</button>
+        <button onClick = "resetCalculator()" id = "resetBtn">リセット</button>
+    </div>
 
-    <button onClick = "calculateIncome()" id = "calculateBtn">Calculate</button>
-    <button onClick = "resetCalculator()" id = "resetBtn">Reset</button>
-
-    <h3>Remaining Income:</h3>
-    <h3 id = "remainingAmount"></h3>
-    
+    <div class = "result-section">
+        <p>残り金額</p>
+        <h3 id = "remainingAmount">¥ ---</h3>
+    </div>
+    </div>
+</div> 
     <script src = "index.js"></script>
 </body>
 </html>
